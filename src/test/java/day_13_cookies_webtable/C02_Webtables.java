@@ -52,12 +52,11 @@ public class C02_Webtables extends TestBase {
             }
 
         }
-        List<WebElement>locationSutunListesi=driver.findElements(By.xpath("//tbody//td[5]"));
+        List<WebElement>locationSutunListesi=driver.findElements(By.xpath("//tbody//td["+(location+1)+"]"));
         for (WebElement w:locationSutunListesi) {
             System.out.println(w.getText());
 
         }
-        //location kacinci sutunda
 
     }
 }
